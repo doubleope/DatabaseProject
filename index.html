@@ -5,7 +5,6 @@
 content="width=device-width, initial-scale=1">
 
 <style>
-
 body {
   font-family: Arial;
   }
@@ -15,7 +14,6 @@ body {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
-
 .tab button {
   background-color: inherit;
   float: left;
@@ -26,15 +24,12 @@ body {
   transition: 0.3s;
   font-size: 17px;
 }
-
 .tab button:hover {
   background-color: #ddd;
 }
-
 .tab button.active {
   background-color: #ccc;
 }
-
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -50,14 +45,14 @@ body {
  <h2>CS 4354: Concepts of Database Systems</h2>
  
  <div class= "tab">
-  <button class="tablinks" onclick="openTrait(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openTrait(event, 'Home')"id="defaultOpen">Home</button>
   <button class="tablinks" onclick="openTrait(event, 'Income')">Income</button>
   <button class="tablinks" onclick="openTrait(event, 'Medicare')">Medicare</button>
   <button class="tablinks" onclick="openTrait(event, 'Heart Deaths')">Heart Deaths</button>
  </div>
  
  <div id="Home" class="tabcontent">
-    <h2>Project Overview</h2>
+    <h3>Project Overview</h3>
       <p>This website shows visual representation of the number of heart disease deaths and the median income of each state in the United 
       States in 2017, as well as the Medicare enrollment in each state from the previous year (2016).</p>
     <h2>Motivation</h2>
@@ -77,7 +72,7 @@ body {
   </div>
   
   <div id = "Heart Deaths" class="tabcontent">
-      <iframe scr="DeathRates.html" width="600" height="600" style="border:none"><iframe>
+      <iframe scr="DeathRates.html" width="600" height="600" style="border:none"></iframe>
   </div>
  
  <script>
@@ -96,7 +91,7 @@ body {
         }
         document.getElementById("defaultOpen").click();
    </script>
+   
    </body>
    </html>
- 
 
